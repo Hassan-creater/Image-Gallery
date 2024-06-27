@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(8, 67, 3, 0.959),#073107);
+    display: flex;
+    gap: 30px;
+   justify-content: center;
+   align-items: center;
+}
+
+.text{
+    background-color:rgba(111, 109, 109,0.7);
+    width: 40%;
+    height:150px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    line-height:25px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px white;
+    
+
+}
+.text:hover{
+    box-shadow: 5px 5px 10px rgb(6, 198, 19);
+}
+
+
+h1{
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 3px 3px 4px darkgreen;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+p{
+    font-weight: bolder;
+    color:white;
+    text-shadow: 1px 1px 3px black;
+    margin-left: 2px;
+    text-align-last: center;
+
+}
+
+.images{
+    height: 550px;
+    width: 50%;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-auto-rows:179px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 5px;
+    border-radius: 15px;
+
+}
+.images:hover{
+    box-shadow: 4px 4px 8px lightgreen;   
+}
+
+.box{
+    background-color: #222;
+    background-blend-mode: hard-light;
+    border-radius: 15px;
+}
+
+.box:hover{
+    background-position: center;
+    background-blend-mode: normal;
+    transition: all 2.5s ease-in-out;
+    box-shadow: 7px 7px 10px white;
+}
+
+#box-col{
+    grid-column: span 2;
+}
+
+#box-row{
+    grid-row: span 2;
+}
+
+
